@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us | Blockchain Freelancer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Blockchain Freelancer">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap.js-->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top" id="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Freelancer</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Post Jobs </a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-comments"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-info"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="#">About Blockchain-Freelancer</a></li>
+                <li><a href="#">Earn Bitcoin</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#signModal">Sign Up </a>
+            </li>
+            <li class="dropdown">
+              <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Log In </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><!--//Navbar-ends-->
+  <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content for login-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+                <div>
+                  <input type="text" name="" value="Paul Olarewaju" placeholder="Enter Your Username Here" required class=""/>
+                  <label for="userName" class="label">Username</label><br>
+                </div><br>
+                <div>
+                  <input type="password" name="" value="123456789" placeholder="Enter Your Password Here" required class=""/>
+                  <label for="passKey" class="label">Password</label>
+                </div><br>
+                <div style="padding-left:3%">
+                  <label class="contain"> <p>Remeber my login details</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div><br>
+                <div class="modal-footer">
+                  <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Login</button>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Login with Facebook</span></button>
+                </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    </div>
+    <!-- Modal content for the sign up form-->
+    <div class="modal fade" id="signModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content for Sign Up-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="form">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                          <input type="text" name="" value="" placeholder="Enter Your Full name Here" required class=""/>
+                          <label for="fullName" class="label">Fullname</label><br>
+                        </div><br>
+                        <div>
+                          <input type="text" name="" value="" placeholder="Enter Your Username Here" required class=""/>
+                          <label for="" class="label">Username</label><br>
+                        </div><br>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                          <input type="text" name="" value="example@yahoo.com" placeholder="Enter Your Username Here" required class=""/>
+                          <label for="fullName" class="label">Email</label><br>
+                        </div><br>
+                        <select class="select" name="option">
+                            <option value="" selected>Freelancer</option>
+                            <option value="1">Client</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <div>
+                         <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Sign Up</button>
+                    </div><br>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                            <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Sign Up using Facebook</span></button>
+                      </div>
+                    </div>
+                  </div>
+                    <center class="modal-footer" style="text-align:center">
+                      Already have an account? <a onclick="window.open('index.html#myModal');
+    window.open('index.html');">Click Here To Login</a>
+                    </center>
+                </div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+    </div><br><br>
+ <!--Contact-body-->
+ <div class="contact-body">
+   <div class="container">
+     <div class="row">
+       <div class="com-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="contact-section">
+          <form class="form">
+            <div>
+              <input type="text" name="" value="" placeholder="Enter Your Name Here" required class=""/>
+              <label for="" class="label">Your Name</label><br>
+            </div><br>
+            <div>
+              <input type="text" name="" value="@" placeholder="example@yahoo.com" required class=""/>
+              <label for="" class="label">Your Email</label><br>
+            </div><br>
+            <select class="select" name="option">
+                <option value="" selected> -Category- </option>
+                <option value="1">General enquiry</option>
+                <option value="2">Technical support</option>
+                <option value="3">Feedback & Suggestions</option>
+                <option value="4">Media</option>
+                <option value="5">Careers</option>
+            </select><br><br>
+            <div>
+              <input type="text" name="" value="" placeholder="Enter Subject Here
+              " required class=""/>
+              <label for="" class="label">Subject</label><br>
+            </div><br>
+            <div>
+              <input type="text" name="" value="" placeholder="Enter Phone
+              " required class=""/>
+              <label for="" class="label">Your Phone Number</label><br>
+            </div><br>
+            <div>
+              <textarea max="500" value="" placeholder="Enter message here" rows="4"></textarea>
+            </div><br>
+            <div>
+                 <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Submit</button>
+            </div><br>
+           </form>
+        </div>  
+        </div>
+       <div class="com-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+         <div class="contact-text">
+           <h1>Contact Us</h1>
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <div class="first-contact-text-section">
+                   <h3>Visit Our Support Pages</h3>
+                   <p>Answers to common questions can be found here: </p>
+                   <ul>
+                     <li><a href="">Blog</a></li>
+                     <li><a href="help.html">Help</a></li>
+                   </ul>
+                </div>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="second-contact-text-section">
+                  <h3>Message Us</h3>
+                  <p>Use the contact form or <a href="mailto:paulolarewaju@gmail.com?message=body&subject=Contact">email</a> us</p>
+                  <ul>
+                    <li><a href="">Media Inquiries</a></li>
+                  </ul>
+                </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!--footer-->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <span class="footer-right-text">
+                  <ul class="list-inline">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Term</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                </span>
+              </div>
+          </div>
+      </div>
+  </div>
+  </body> 
+  </html>

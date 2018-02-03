@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Freelancers | Blockchain Freelancer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Blockchain Freelancer">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/browse.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap.js-->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" id="navigation">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">Freelancer</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a type="button" href="post-jobs.html" class="dropdown-toggle">Post Jobs </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="browse-freelancers.html" class="dropdown-toggle">Browse Freelancers </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="browse-jobs.html" class="dropdown-toggle">Browse Jobs </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="earn-bitcoin.html" class="dropdown-toggle">Earn Bitcoin </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#signModal">Sign Up </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Log In </a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav><br><br><br><!--//Navbar-ends-->
+	<!-- Modal -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content for login-->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          	<h4 class="modal-title">Login</h4>
+	        	</div>
+	        <div class="modal-body">
+	          	<div class="form">
+	                <div>
+	                  <input type="text" name="" value="Paul Olarewaju" placeholder="Enter Your Username Here" required class=""/>
+	                  <label for="userName" class="label">Username</label><br>
+	                </div><br>
+	                <div>
+	                  <input type="password" name="" value="123456789" placeholder="Enter Your Password Here" required class=""/>
+	                  <label for="passKey" class="label">Password</label>
+	                </div><br>
+	                <div style="padding-left:3%">
+		                <label class="contain"> <p>Remeber my login details</p>
+		                  <input type="checkbox" checked="checked">
+		                  <span class="checkmark"></span>
+		                </label>
+	                </div><br>
+	                <div class="modal-footer">
+	                  <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Login</button>
+	                </div>
+	                <div class="modal-footer">
+	                  <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Login with Facebook</span></button>
+	                </div>
+	        	</div>
+	      	</div>
+	      </div>
+	  	</div>
+	  </div>
+	  <!-- Modal content for the sign up form-->
+	<div class="modal fade" id="signModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content for Sign Up-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Sign Up</h4>
+	        </div>
+	        <div class="modal-body">
+            	<div class="container-fluid">
+            		<div class="form">
+	            		<div class="row">
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+				                  <input type="text" name="" value="" placeholder="Enter Your Full name Here" required class=""/>
+				                  <label for="fullName" class="label">Fullname</label><br>
+				                </div><br>
+				                <div>
+				                  <input type="text" name="" value="" placeholder="Enter Your Username Here" required class=""/>
+				                  <label for="" class="label">Username</label><br>
+				                </div><br>
+	            			</div>
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+				                  <input type="text" name="" value="example@yahoo.com" placeholder="Enter Your Username Here" required class=""/>
+				                  <label for="fullName" class="label">Email</label><br>
+				                </div><br>
+				                <select class="select" name="option">
+				                    <option value="" selected>Freelancer</option>
+				                    <option value="1">Client</option>
+				                </select>
+	            			</div>
+	            		</div>
+	            		<div class="row">
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+						             <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Sign Up</button>
+						        </div><br>
+	            			</div>
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+		            			<div>
+						                <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Sign Up using Facebook</span></button>
+					            </div>
+	            			</div>
+	            		</div>
+            			<center class="modal-footer" style="text-align:center">
+            				Already have an account? <a onclick="window.open('index.html#myModal');window.open('index.html');">Click Here To Login</a>
+            			</center>
+            		</div>
+            	</div>
+	      	</div>
+		</div>
+		</div>
+	</div>
+	<!--body-->
+<div class="browse">
+  <div class="browse-header">
+    <div class="form">
+      <div class="input-group">
+        <input class="form-control search-bar" type="search" placeholder="Who Do You Need" name="" value="" /><span class="input-group-addon" style=""> <a href="" type="search"><span class="fa fa-search"></span></a></span>
+      </div>
+    </div>
+  </div><br><br><br>
+  <div class="container browse-body">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 browse-body-column-1" style="border-right:1px solid grey;">
+        <label for="" class="label" style="font-size: 10px;">use the control(ctrl) key to select multiple options</label>
+        <select class="select" multiple>
+          <optgroup class="root-category" label="Design &amp; Creative">
+            <option class="sub-category" value="370">Banner &amp; Flyers</option>
+            <option class="sub-category" value="371">Business Cards &amp; Stationery</option>
+            <option class="sub-category" value="372">Flyers &amp; Posters</option>
+            <option class="sub-category" value="373">Illustration</option>
+            <option class="sub-category" value="374">Infographics</option>
+            <option class="sub-category" value="375">Logo Design</option>
+            <option class="sub-category" value="376">Music &amp; Audio</option>
+            <option class="sub-category" value="377">Photography</option>
+            <option class="sub-category" value="378">Photoshop Editing</option>
+            <option class="sub-category" value="379">Social Media Content</option>
+            <option class="sub-category" value="380">Graphic Design</option>
+            <option class="sub-category" value="381">Video &amp; Animation</option>
+          </optgroup>
+        </select><br><br>
+        <select class="select" multiple>
+            <optgroup class="root-category" label="Marketing">
+              <option class="sub-category" value="383">Email Campaigns</option>
+              <option class="sub-category" value="384">Growth Hacking</option>
+              <option class="sub-category" value="385">Lead Generation</option>
+              <option class="sub-category" value="386">Marketing Strategy</option>
+              <option class="sub-category" value="387">Public Relations (PR)</option>
+              <option class="sub-category" value="388">Search Marketing (SEM)</option>
+              <option class="sub-category" value="389">Search Optimization (SEO)</option>
+              <option class="sub-category" value="390">Social Management</option>
+              <option class="sub-category" value="391">Social Marketing (SMM)</option>
+              <option class="sub-category" value="392">Sales</option>
+              <option class="sub-category" value="393">Web Analytics</option>
+            </optgroup>
+        </select><br><br>
+        <select class="select" multiple>
+            <optgroup class="root-category" label="Business">
+              <option class="sub-category" value="395">Accounting</option>
+              <option class="sub-category" value="396">Business Consulting</option>
+              <option class="sub-category" value="397">Business Plans</option>
+              <option class="sub-category" value="398">Data Entry</option>
+              <option class="sub-category" value="399">Financial Modelling</option>
+              <option class="sub-category" value="400">Fundraising &amp; Crowdfunding</option>
+              <option class="sub-category" value="401">Legal</option>
+              <option class="sub-category" value="402">Online &amp; Market Research</option>
+              <option class="sub-category" value="403">Admin / Virtual Assistance</option>
+              <option class="sub-category" value="404">Presentations &amp; Pitch</option>
+              <option class="sub-category" value="405">Project Management</option>
+            </optgroup>
+        </select><br><br>
+        <select class="select" multiple>
+            <optgroup class="root-category" label="Technology">
+              <option class="sub-category" value="407">Backend Development</option>
+              <option class="sub-category" value="408">Database Admin</option>
+              <option class="sub-category" value="409">Web Design &amp; Development</option>
+              <option class="sub-category" value="410">Linux &amp; Infrastructure</option>
+              <option class="sub-category" value="411">Mobile Apps</option>
+              <option class="sub-category" value="412">Networking</option>
+              <option class="sub-category" value="413">Product &amp; UI/UX</option>
+              <option class="sub-category" value="414">Scripts &amp; Utilities</option>
+              <option class="sub-category" value="415">Security &amp; Testing</option>
+              <option class="sub-category" value="416">User Testing &amp; QA</option>
+              <option class="sub-category" value="417">Software Development</option>
+              <option class="sub-category" value="418">Wordpress &amp; CMS</option>
+            </optgroup>
+        </select><br><br>
+        <select class="select" multiple>
+            <optgroup class="root-category" label="Writing">
+              <option class="sub-category" value="420">Blog Writing</option>
+              <option class="sub-category" value="421">Copywriting</option>
+              <option class="sub-category" value="422">Editing &amp; Proofreading</option>
+              <option class="sub-category" value="423">Translation</option>
+              <option class="sub-category" value="424">Web Content</option>
+            </optgroup>
+        </select><br><br>
+        <select class="select" multiple>
+            <optgroup class="root-category" label="Blockchain">
+              <option class="sub-category" value="426">Business Consulting</option>
+              <option class="sub-category" value="427">Blockchain Consulting</option>
+              <option class="sub-category" value="428">Cryptography</option>
+              <option class="sub-category" value="429">Mining</option>
+              <option class="sub-category" value="430">Payments &amp; Commerce</option>
+              <option class="sub-category" value="431">Security Consulting</option>
+              <option class="sub-category" value="432">Technology Consulting</option>
+              <option class="sub-category" value="433">Bitcoin</option>
+              <option class="sub-category" value="434">Ethereum</option>
+              <option class="sub-category" value="435">Lisk</option>
+              <option class="sub-category" value="436">Monero</option>
+              <option class="sub-category" value="450">ZCash</option>
+              <option class="sub-category" value="453">Artificial Intelligence (AI)</option>
+              <option class="sub-category" value="454">Hyperledger</option>
+            </optgroup>
+        </select><br><br>
+        <label for="" class="label">HOURLY RATE RANGE(&#8358;)</label>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <input type="number" class="form-control" placheolder="" value="" required name="">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <input type="number" class="form-control" placheolder="" value="to" required name="">
+          </div>
+        </div><br>
+        <label for="" class="label">COUNTRY</label>
+        <select class="select" name="option">
+            <option value=""></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </select><br><br>
+        <label for="" class="label">INCLUDE</label><br>
+        <input type="checkbox" name="" checked="true">
+        <span style="font-size:20px;">Freelancer</span><br>
+        <input type="checkbox" name="" checked="true">
+        <span style="font-size:20px;">Client</span>
+        <br><br>
+        <label for="" class="label">GIG PRICE RANGE</label><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+        <input type="checkbox" name="">
+        <span style="font-size:20px;"></span><br>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 browse-body-column-2" style="border-left:none">
+          <div class="search-result">
+            <span class="results-header">Result(10)</span>
+          </div><br>
+          <div class="search-result">
+            <div class="row projects">
+	            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+	              <span class="project-header"></span>
+	            </div>
+	            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+	              <span class="project-header">budget</span>
+	            </div>
+	            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+	              <span class="project-header">proposals</span>
+	            </div>
+	            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+	              <span class="project-header">category</span>
+	            </div>
+	            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+	              <span class="project-header">posted</span>
+	            </div>
+	           </div>
+          </div><br>
+          <div class="search-result">
+            <div class="row">
+	            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+	              <span class="result-name">
+	              	<a href="job-preview.html">
+	              		<span>Coder to recover bitcoin recovery key</span>
+	              	</a>
+	              	<a href=""><span class="label-success">JavaScript</span>
+	              	<a href=""><span class="label-success">Java</span></a>
+	              	<a href=""><span class="label-success">Ruby</span></a>
+	              </span>
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+	              	<span class="hire-price">&#3647;30,000 / hr</span><br>
+                   	<span class="hire-price-2" style="color:grey;font-size: 14px;font-weight: lighter">&#8358; 34,444 / hr</span>
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+	              <span class="proposal-number">1 Proposal</span></span>
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+	              <span class="proposal-category">Scripts and Utilities</span>
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+	              <span class="proposal-date">24th, January</span>
+	            </div>
+	           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--//body ends-->
+	<!--footer-->
+	<div class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+	                <span class="footer-right-text">
+	                  <ul class="list-inline">
+	                    <li><a href="about.html">About</a></li>
+	                    <li><a href="#">Blog</a></li>
+	                    <li><a href="terms.html">Term</a></li>
+	                    <li><a href="#"></a></li>
+	                    <li><a href="#"></a></li>
+	                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                  </ul>
+                	</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	</body>	
+	</html>

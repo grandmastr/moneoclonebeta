@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earn Bitcoin | Blockchain Freelancer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Blockchain Freelancer">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/earn-bitcoin.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap.js-->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" id="navigation">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">Freelancer</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a type="button" href="post-jobs.html" class="dropdown-toggle">Post Jobs </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="browse-freelancers.html" class="dropdown-toggle">Browse Freelancers </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="browse-jobs.html" class="dropdown-toggle">Browse Jobs </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" href="earn-bitcoin.html" class="dropdown-toggle">Earn Bitcoin </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#signModal">Sign Up </a>
+	        </li>
+	        <li class="dropdown">
+	          <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Log In </a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav><br><!--//Navbar-ends-->
+	<div class="first-header" style="background-image:url('images/autumn.jpg');">
+		<center>
+				<h1>
+					Freelance on Blockchain Projects
+				</h1><br>
+					<div class="create-profile-bg">
+						<div class="create-profile">
+							<div class="container-fluid">
+								<div class="row">
+									<form role="form">
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+											<input type="text" class="form-control" placeholder="Freelancer/" value="" maxlength="30" required name="" style="width:100%;" />
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+											<button type="button" class="btn btn-profile btn-lg btn-block" data-toggle="modal" data-target="#signModal">
+												Create Profile
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+	</div>
+	<!-- Modal -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content for login-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Login</h4>
+	        </div>
+	        <div class="modal-body">
+	          <div class="form">
+                <div>
+                  <input type="text" name="" value="Paul Olarewaju" placeholder="Enter Your Username Here" required class=""/>
+                  <label for="userName" class="label">Username</label><br>
+                </div><br>
+                <div>
+                  <input type="password" name="" value="123456789" placeholder="Enter Your Password Here" required class=""/>
+                  <label for="passKey" class="label">Password</label>
+                </div><br>
+                <div style="padding-left:3%">
+	                <label class="contain"> <p>Remeber my login details</p>
+	                  <input type="checkbox" checked="checked">
+	                  <span class="checkmark"></span>
+	                </label>
+                </div><br>
+                <div class="modal-footer">
+                  <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Login</button>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Login with Facebook</span></button>
+                </div>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	  
+	  </div>
+	  <!-- Modal content for the sign up form-->
+	  <div class="modal fade" id="signModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content for Sign Up-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Sign Up</h4>
+	        </div>
+	        <div class="modal-body">
+            	<div class="container-fluid">
+            		<div class="form">
+	            		<div class="row">
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+				                  <input type="text" name="" value="" placeholder="Enter Your Full name Here" required class=""/>
+				                  <label for="fullName" class="label">Fullname</label><br>
+				                </div><br>
+				                <div>
+				                  <input type="text" name="" value="" placeholder="Enter Your Username Here" required class=""/>
+				                  <label for="" class="label">Username</label><br>
+				                </div><br>
+	            			</div>
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+				                  <input type="text" name="" value="example@yahoo.com" placeholder="Enter Your Username Here" required class=""/>
+				                  <label for="fullName" class="label">Email</label><br>
+				                </div><br>
+				                <select class="select" name="option">
+				                    <option value="" selected>Freelancer</option>
+				                    <option value="1">Client</option>
+				                </select>
+	            			</div>
+	            		</div>
+	            		<div class="row">
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	            				<div>
+						             <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Sign Up</button>
+						        </div><br>
+	            			</div>
+	            			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+		            			<div>
+						                <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Sign Up using Facebook</span></button>
+					            </div>
+	            			</div>
+	            		</div>
+	            			<center class="modal-footer" style="text-align:center">
+	            				Already have an account? <a onclick="window.open('index.html#myModal');
+    window.open('index.html');">Click Here To Login</a>
+	            			</center>
+            		</div>
+            	</div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	  </div>
+	<div class="container">
+		<div class="services">
+			<div class="container">
+				<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="consult-child">
+							<i class="fa fa-filter fa-5x"></i><br><br>
+								<h5><b>Top Quality</b></h5>
+								<p>
+									Hire the top 5% of freelancers who must meet Blockchain-freelancer's strict quality standards
+								</p>
+						</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="consult-child">
+							<i class="fa fa-mortar-board fa-5x" ></i><br><br>
+								<h5><b>Blockchain Talent</b></h5>
+								<p>
+									Save time and money; hire freelancers with verified blockchain skills and experience
+								</p>
+						</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="consult-child">
+							<i class="fa fa-bitcoin fa-5x"></i><br><br>
+								<h5><b>Hire with Confidence</b></h5>
+								<p>
+									Bitcoin escrow payments, excellent customer support; all backed by a strong team
+								</p>
+						</div>
+				</div>
+				</div>
+			</div><br><br><br><br>
+				<div class="container" style="text-align: center;">
+					<h3 style="color:;font-size:35px;font-weight:lighter">Featured Services</h3><br><br>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/featured-list.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Blockchain consulting</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/bitcoin.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Bitcoin</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/commerce.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Payment & Commerce</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/sublime.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Back-end Development</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div><br><br>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/black-diamond.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Ethereum</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/sublime.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Web Design & Development</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/icons.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Graphic Design</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-3">
+							<div class="featured-services-list">
+								<figure class="figure">
+								    <img src="images/slide29.jpg" class="figure-img img-fluid img-responsive" alt="" title="Featured-list" />
+									<figcaption class="figure-caption" style="padding-top:10px">Marketing Strategy</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div><br><br>
+				</div><br>
+					<div class="container">
+						<h2 style="font-weight:lighter;font-size:40px;text-align: center">How Blockchain-freelancer works</h2><br><br>
+						<div class="row">
+							<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3">
+								<div class="how-it-works-list">
+									<span class="number">1</span><br><br>
+									<i class="fa fa-envelope fa-5x"></i><br><br><br><br>
+								<p style="color:;font-size:17px">Post a job</p>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Run hourly for long-term projects, or fixed proce for a quick turn around 
+								</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3">
+								<div class="how-it-works-list">
+									<span class="number">2</span><br><br>
+									<i class="fa fa-users fa-5x"></i><br><br><br><br>
+								<p style="color:;font-size:17px">Hire a freelancer</p>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Invite expert freelancers, receive proposals, and hire the best (under NDA)
+								</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3">
+								<div class="how-it-works-list">
+									<span class="number">3</span><br><br>
+									<i class="fa fa-bitcoin fa-5x"></i><br><br><br><br>
+								<p style="color:;font-size:17px">Make Payment</p>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Fund milestones based on agreed deliverables or freelancer timesheets
+								</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6 col-md-3 col-lg-3 col-xl-3">
+								<div class="how-it-works-list">
+									<span class="number">4</span><br><br>
+									<i class="fa fa-thumbs-up fa-5x"></i><br><br><br><br>
+								<p style="color:;font-size:17px">Release Payment</p>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Release payment as milestones are completed, and leave feedback when done
+								</p>
+								</div>
+							</div>
+						</div><br><br>
+						<h2 style="font-weight:lighter;font-size:40px;text-align: center">What Our Clients Say</h2><br><br>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+								<div class="some-of-our-best-list">
+									<img src="images/ba2.jpg" alt="" title="" style="border-radius:50%;margin-bottom:12%;margin-top:15%" class="img-circle" height="28%" width="28%" /><br>
+									<h5>Kara Kent</h5>
+									<span class="fa fa-map-marker"></span>
+									<span class="client-location">
+									 <b><i> Krypton</i></b>
+									</span><br><br>
+									<p>
+										<i>
+											I’m amazed how easy the site is to use, it’s very intuitive and well designed		
+										</i>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+								<div class="some-of-our-best-list">
+									<img src="images/ba2.jpg" alt="" title="" style="border-radius:50%;margin-bottom:12%;margin-top:15%" class="img-circle" height="28%" width="28%" /><br>
+									<h5>Kara Kent</h5>
+									<span class="fa fa-map-marker"></span>
+									<span class="client-location">
+									 <b><i> Krypton</i></b>
+									</span><br><br>
+									<p>
+										<i>
+											I’m amazed how easy the site is to use, it’s very intuitive and well designed
+										</i>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+								<div class="some-of-our-best-list">
+									<img src="images/ba2.jpg" alt="" title="" style="border-radius:50%;margin-bottom:12%;margin-top:15%" class="img-circle" height="28%" width="28%" /><br>
+									<h5>Kara Kent</h5>
+									<span class="fa fa-map-marker"></span>
+									<span class="client-location">
+									 <b><i> Krypton</i></b>
+									</span><br><br>
+									<p>
+										<i>
+											I’m amazed how easy the site is to use, it’s very intuitive and well designed		
+										</i>
+									</p>
+								</div>
+							</div>
+					</div><br><br><br>
+			<div class="consult">
+				<h3>Consult for Bitcoin</h3><br><br>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div class="consult-child">
+								<i class="fa fa-cube fa-5x"></i><br><br><br><br>
+								<h5 style="color:;font-size:17px"><b>Niche Talent Pool</b></h5><br>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Blockchain-freelancer resource blockchain projects with experts like you. Pay 10% on completed work
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div class="consult-child">
+								<i class="fa fa-certificate fa-5x"></i><br><br><br><br>
+								<h5 style="color:;font-size:17px"><b>Quality Clients</b></h5><br>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Blockchain-freelancer connect you with startups and Institutions looking for blockchain talent
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div class="consult-child">
+								<i class="fa fa-users fa-5x"></i><br><br><br><br>
+								<h5 style="color:;font-size:17px"><b>Elite Community</b></h5><br>
+								<p style="font-size:15px;color:;font-weight:lighter">
+									Your reputation counts; Blockchain-freelancer quality check all freelancers, so you're alongside the best
+								</p>
+							</div>
+						</div>
+					</div><br><br><br>
+						<h3></h3><br>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="create-profile">
+			<div class="container-fluid">
+				<div class="row">
+					<form role="form">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<input type="text" class="form-control" placeholder="Freelancer/" value="" maxlength="30" required name="" style="width:100%;" />
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<button type="button" class="btn btn-profile btn-lg btn-block" data-toggle="modal" data-target="#signModal">
+								Create Profile
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--footer-->
+	<div class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+	                <span class="footer-right-text">
+	                  <ul class="list-inline">
+	                    <li><a href="about.html">About</a></li>
+	                    <li><a href="#">Blog</a></li>
+	                    <li><a href="terms.html">Term</a></li>
+	                    <li><a href="#"></a></li>
+	                    <li><a href="#"></a></li>
+	                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                  </ul>
+                	</span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	</body>	
+	</html>

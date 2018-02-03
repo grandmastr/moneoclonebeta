@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us | Blockchain Freelancer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Blockchain Freelancer">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap.js-->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top" id="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Freelancer</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="post-jobs.html">Post Jobs</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-comments"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-info"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="about.html">About Blockchain-Freelancer</a></li>
+                <li><a href="earn-bitcoin.html">Earn Bitcoin</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#signModal">Sign Up </a>
+            </li>
+            <li class="dropdown">
+              <a type="button" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Log In </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><!--//Navbar-ends-->
+  <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content for login-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form">
+                <div>
+                  <input type="text" name="" value="Paul Olarewaju" placeholder="Enter Your Username Here" required class=""/>
+                  <label for="userName" class="label">Username</label><br>
+                </div><br>
+                <div>
+                  <input type="password" name="" value="123456789" placeholder="Enter Your Password Here" required class=""/>
+                  <label for="passKey" class="label">Password</label>
+                </div><br>
+                <div style="padding-left:3%">
+                  <label class="contain"> <p>Remeber my login details</p>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div><br>
+                <div class="modal-footer">
+                  <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Login</button>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Login with Facebook</span></button>
+                </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    </div>
+    <!-- Modal content for the sign up form-->
+    <div class="modal fade" id="signModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content for Sign Up-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="form">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                          <input type="text" name="" value="" placeholder="Enter Your Username Here" required class=""/>
+                          <label for="fullName" class="label">Fullname</label><br>
+                        </div><br>
+                        <div>
+                          <input type="text" name="" value="" placeholder="Enter Your Username Here" required class=""/>
+                          <label for="" class="label">Username</label><br>
+                        </div><br>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                          <input type="text" name="" value="example@yahoo.com" placeholder="Enter Your Username Here" required class=""/>
+                          <label for="fullName" class="label">Email</label><br>
+                        </div><br>
+                        <select class="select" name="option">
+                            <option value="" selected>Freelancer</option>
+                            <option value="1">Client</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <div>
+                         <button class="btn btn-submit btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;">Sign Up</button>
+                    </div><br>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                            <button class="btn btn-facebook-login btn-lg btn-block" style="box-shadow: 0px 0px 0px 0px;"><span class="pull-left fa fa-facebook" style="outline:none;border:none;"></span><span>Sign Up using Facebook</span></button>
+                      </div>
+                    </div>
+                  </div>
+                    <center class="modal-footer" style="text-align:center">
+                      Already have an account? <a onclick="window.open('index.html#myModal');
+    window.open('index.html');">Click Here To Login</a>
+                    </center>
+                </div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+    </div><br><br>
+<!--Categories body--> 
+<div class="about-us">
+	<div class="container">
+			<header>
+				<center>
+					<h3>About Blockchain Freelancer</h3>
+					<br><br>
+				</center>
+			</header>
+			<section>
+				<h4>Blockchain Freelancer</h4>
+				<p>
+					Hire hand-picked blockchain freelancers. Blockchain Freelancer is a platform to run large projects or book one-off gigs;
+					all with secure bitcoin escrow payments.
+				</p>
+				<br>
+
+				<h4>What we do</h4>
+				<p>
+					Whether you're a startup or institution; hire qualified and vetted blockchain freelancers.
+					Quality is everything; only the top 5% pass Blockchain Freelancer's strict quality checks.
+					The Blockchain Freelancer team is always ready to help resource your project and support you were needed.
+				</p>
+				<p>
+					Blockchain Freelancer is the place to consult for Bitcoin; designers, marketers, developers, and consultancies; access more clients, build trust, and showcase your skills.
+					Blockchain Freelancer deduct 10% from completed work to run and develop the site, and pay for marketing.
+					Everyone benefits from straightforward payments with Bitcoin.
+				</p><br>
+
+				<h4>Product</h4>
+				<p>
+					Blockchain Freelancer is a combined effort of thousands of hours of work, from frontend and backend developers,
+					marketers, growth hackers, product managers, UI designers, blockchain industry experts, and researchers
+					over 18 months.
+				</p>
+				<p>
+					Blockchain Freelancer is a powerful, yet simple product. The complexity of the backend workflows,
+					marketing integrations, and the payment system is transparent to Blockchain Freelancer's customers.
+					Payments are all localised, so prices are displayed in local currencies.
+				</p>
+				<p>
+					Blockchain Freelancer support hourly jobs, and fixed price jobs and gigs.
+					Whatever path a client takes to working with a freelancer; Blockchain Freelancer's comprehensive milestone, invoicing,
+					and escrow system supports projects of any length and budget.
+				</p>
+				<p>
+					Freelancers can create a customisable (and beautiful) profile to showcase their skills and
+					sell services; add custom banners and logos, upload photos and videos, create gigs with discounts,
+					verify identity and qualifications, and a lot more.
+				</p><br>
+
+				<h4>Difference</h4>
+				<p>
+					Bitcoin is ushering in the next generation of commerce, and blockchain is changing industries.
+					While there are numerous gig and freelance sites around, most of them are flooded with low-quality
+					services and bargain-basement discounts.
+				</p>
+				<p>
+					Blockchain Freelancer is different. Whether you're running an ICO, or an enterprise building a blockchain solution;
+					Blockchain Freelancer is a platform to resource and run your projects. Our team will work one-on-one with you.
+				</p><br>
+
+				<h4>Mission</h4>
+				<p>
+					The team behind Blockchain Freelancer has a goal of building a simple and trustworthy platform.
+					Bitcoin and blockchain technology is changing the world, and we are passionate about
+					contributing to the community. We aspire to be the go-to place for sourcing blockchain talent.
+				</p><br>
+
+				<h4>Company</h4>
+				<p>
+					Blockchain Freelancer Services Ltd trading as Blockchain Freelancer.io. Registered office: 152 Kemp House, City Road, London,
+					United Kingdom, EC1V 2NX. Registered in England and Wales with company registration number: 9942105
+				</p><br>
+
+				<h4>Escoin</h4>
+				<p>
+					Escoin (Escrow Coin) is a separate brand and service owned and operated by Blockchain Freelancer Services Ltd.
+					Escoin is a secure payment system providing Bitcoin payment, key storage, and settlement services,
+					external to the Blockchain Freelancer platform.
+				</p><br>
+			</section>
+			<br><br>
+			<h1>Our Team</h1>
+			<br>
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team.jpg" height="70%" width="70%" alt="" title="" class="img-circle img" style="border-radius:50%"/>
+						<br>
+						<br>
+						<h3>Richard Foster, CEO &amp; Founder</h3>
+						<p>
+							Startup founder, entrepreneur, network architect, and payments expert. 10 years as freelancer in finance and
+							energy sectors
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team3.jpg" height="70%" width="70%" alt="" title="" style="border-radius:50%" class="img-circle img"/>
+						<br>
+						<br>
+						<h3>Amy Diez, COO &amp; Co-Founder</h3>
+						<p>
+							ACCA Chartered Accountant, Financial Modeller and Management Freelancer in finance and technology.
+							Associate Director at KPMG London for 12 years
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team2.jpg" height="70%" width="70%" alt="" title="" style="border-radius:50%" class="img img-circle" />
+						<br>
+						<br>
+						<h3>Vladimir Popov, Head of Marketing</h3>
+						<p>
+							Growth Hacker and Marketing Specialist; Digital Advertising, AdWords / Analytics,
+							B2B Marketing, Social media and SEM Marketing
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="team-mini-profile">
+						<img src="images/about-team4.jpg" height="50%" width="50%" alt="" title="" class="img-circle img" style="border-radius:50%"/>
+						<br>
+						<br>
+						<h3>Pavel Feklistov, Lead Developer</h3>
+						<p>
+							Ruby on Rails application architect, JavaScript, Swift, Bitcoin payment system integration
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="team-mini-profile">
+						<img src="images/about-team5.jpg" height="50%" width="50%" alt="" title="" style="border-radius:50%" class="img-circle img"/>
+						<br>
+						<br>
+						<h3>Sergey Mitrofanov, System Engineer</h3>
+						<p>
+							System &amp; Infrastructure Architect with Cloud, Database, DevOps, and Security.
+							10 years building high-load information systems
+						</p>
+					</div>
+				</div>
+			</div><br>
+			<h1>Advisors</h1>
+			<br>
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team7.jpg" height="70%" width="70%" alt="" title="" class="img-circle img" style="border-radius:50%"/>
+						<br>
+						<br>
+						<h3>Darren Camas, Business Strategy</h3>
+						<p>
+							Blockchain Entrepreneur, founder of Bitnexo.com, six years experience as freelancer and public speaker
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team1.jpg" height="70%" width="70%" alt="" title="" style="border-radius:50%" class="img-circle img"/>
+						<br>
+						<br>
+						<h3>Paul Gordon, Industry Expert</h3>
+						<p>CEO at Quantave, Former derivatives trader in London, Board member at UK Digital Currency Association, Director at Coinscrum London - world's largest digital currency networking group</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
+					<div class="team-mini-profile">
+						<img src="images/about-team8.jpg" height="70%" width="70%" alt="" title="" style="border-radius:50%" class="img img-circle" />
+						<br>
+						<br>
+						<h3>James Welsh, Marketing &amp; Growth</h3>
+						<p>Entrepreneur, exited startup at 1m EUR. Founder of GarageBeer.co; raised 1.5m EUR in Spain's most succesfull crowdfunding campaign</p>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<h1>Brand Ambassadors</h1>
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+					<div class="team-mini-profile" style="padding-left:33%;padding-right:33%">
+						<img src="images/ba1.jpg" height="60%" width="60%" alt="" title="" class="img-circle img" style="border-radius:50%"/>
+						<br>
+						<br>
+						<h3>Lucas Cullen, Australia</h3>
+						<p>Blockchain Consultant and Developer, Board Member at Bitcoin Association of Australia, founder of Bitcoin Brisbane Meetup</p>
+					</div>
+				</div>
+			</div><br>
+	</div>
+	</div>
+	<!--footer-->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <span class="footer-right-text">
+                  <ul class="list-inline">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="term.html">Term</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                </span>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

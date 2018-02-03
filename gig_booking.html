@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gigs and Projects | Blockchain Freelancer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Blockchain Freelancer">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!--Script-->
+    <script type="text/javascript" src="js/jobs.js"></script>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-fixed-top" id="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Freelancer</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="dropdown">
+          <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#">Jobs </a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="jobs.html"> Active</a></li>
+            <li><a href="jobs.html"> Invitation</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#">Gigs </a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="gig_booking.html"> List Gigs</a></li>
+            <li><a href="profile-quickview.html"> Booked Gig</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#">Profile </a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="profile.html"> Edit Profile</a></li>
+            <li><a href="freelancer-verification.html"> Verification</a></li>
+            <li><a href="help.html"> Help Guides</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#">Browse </span></a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="browse-freelancer.html"> Browse Freelancers</a></li>
+            <li><a href="browse-jobs.html">Browse Jobs</a></li>
+            <li><a href="categories.html">Categories</a></liq>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#">To do <span class="badge" style="opacity:0.7">8</span></a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
+            <li><a href="post-jobs.html">Post Job</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-comments"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#"><i class="fa fa-info"></i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="about.html">About Blockchain-Freelancer</a></li>
+                <li><a href="earn-bitcoin">Earn Bitcoin</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle dropbtn" data-toggle="dropdown" href="#" style="color:#fff">Paul Oladimeji</i></a>
+              <ul class="dropdown-menu dropdown-content">
+                <li><a href="personal-profile.html">Personal Profile</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="payment.html">Payments</a></li>
+                <li><a href="notifications.html">Notification</a></li>
+                <li><a href="index.html">Log Out</a></li>
+              </ul>
+            </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav><br><br><br><!--//Navbar-ends-->
+<!--Jobs-body-->
+<div class="jobs-body">
+  <h1>Gig Bookings</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'All')">All</button>
+      <button class="tablinks" onclick="openTab(event, 'Pending')">Pending(0)</button>
+      <button class="tablinks" onclick="openTab(event, 'Accepted')">Accepted(0)</button>
+      <button class="tablinks" onclick="openTab(event, 'Completed')">Completed</button>
+    </div>
+
+    <div id="All" class="tabcontent">
+        <div class="input-group">
+            <input class="form-control search-bar" type="search" placeholder="Search Your Jobs......" name="" value="" />
+            <span class="input-group-addon" style=""> <span class="fa fa-search"></span>
+        </div>
+        <div class="container-fluid">
+          <div class="container-fluid search-list">
+          <div class="row projects">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-header">#gigs</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">date</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">gig status</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">total</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">payment-status</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Designing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">24th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">pending</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Paid</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="Pending" class="tabcontent">
+        <div class="input-group">
+            <input class="form-control search-bar" type="search" placeholder="Search Your Jobs......" name="" value="" />
+            <span class="input-group-addon" style=""> <span class="fa fa-search"></span>
+        </div>
+        <div class="container-fluid search-list">
+          <div class="row projects">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-header">#gigs</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">date</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">gig status</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">total</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">payment-status</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="Accepted" class="tabcontent">
+        <div class="input-group">
+            <input class="form-control search-bar" type="search" placeholder="Search Your Jobs......" name="" value="" />
+            <span class="input-group-addon" style=""> <span class="fa fa-search"></span>
+        </div>
+        <div class="container-fluid ">
+          <div class="row projects">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-header">#gigs</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">date</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">gig status</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">total</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">payment-status</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+    </div>
+    <div id="Completed" class="tabcontent">
+        <div class="input-group">
+            <input class="form-control search-bar" type="search" placeholder="Search Your Jobs......" name="" value="" />
+            <span class="input-group-addon" style=""> <span class="fa fa-search"></span>
+        </div>
+        <div class="container-fluid">
+          <div class="container-fluid search-list">
+          <div class="row projects">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-header">#gigs</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">date</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">gig status</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">total</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-header">payment-status</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <span class="project-list-objects">Web Analysing</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">30th January, 2017</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">approved</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <span class="project-list-objects">Pending</span>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--//Jobs-body-->
+  <div class="footer" style="width:full-width">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <span class="footer-right-text">
+                  <ul class="list-inline">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://blog.freelancer.com">Blog</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a href="https://facebook.com/freelancer"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/freelancer"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- Script -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

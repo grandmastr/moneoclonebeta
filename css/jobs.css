@@ -1,0 +1,359 @@
+body{
+    background-color:#f7f8fa;
+    font-family:"Rubik";
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.select{
+    background-color:#f6f6f6;
+    color:#000;
+    opacity:0.5;
+    height:45px;
+    font-size: 20px;
+    width:90px;
+}
+.select option{
+    background-color:white;
+    color:#00274c;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    width:33.33%;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+.search-bar{
+  padding-top:2%;
+  padding-bottom:2%;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*Navigation bar*/
+#navigation {
+    background: #00274c;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+
+#navigation a {
+    color: #5e718f;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: #fff;
+}
+ul.nav li a{
+    font-size:16px;
+}
+ul.nav li a:hover {
+    background: transparent;
+}
+.dropdown-menu{
+    color:#5e718f;
+}
+.icon-bar{
+    color: #5e718f;
+}
+.navbar-brand{
+    font-size:20px;
+}
+.fa{
+    padding:1%;
+    color:;
+}
+.fa-facebook{
+    padding:1%;
+    padding-left:2%;
+    padding-right:2%;
+    color:;
+    background-color:;
+}
+.fa-twitter{
+    color:;
+    background-color:;
+}
+.tabcontent{
+    border:2px  grey solid;
+    border-radius:3px;
+    border-top:none;
+    padding-top:3%;
+    height:auto;
+}
+.jobs-body{
+    height:600px;
+    width:100%;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+.jobs-body h1{
+    color:grey;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom:5%;
+    margin-top:2%;
+    text-align: center;
+    user-select:none;
+}
+.search-list{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+.search-list .list-header{
+    color:red;
+    font-size: 15px;
+    font-weight:bold;
+    font-family: "Rubik";
+    text-transform: uppercase;
+}
+.no-posting-text{
+    color:grey;
+    padding-top:8%;
+    padding-bottom:6%;
+}
+.no-posting-text h3{
+    font-size: 23px;
+    font-family: "Rubik";
+    font-weight: bold;
+}
+.no-posting-text p{
+    font-size: 18px;
+    font-family: "Rubik";
+    font-weight: lighter;
+}
+.form div .btn-submit{
+    color:#ffffff;
+    background-color:#4fca63;
+    width:100%;
+    -webkit-transition:0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    outline:none;
+    border:none;
+}
+.form div .btn-submit:hover{
+    color:#4fca63;
+    width:100%;
+    background-color:#ffffff;
+    -webkit-transition:0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    outline:none;
+    border:none;
+}
+/* Customize the label (the container) */
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.project-header{
+    color:#00274c;
+    font-family: "Rubik";
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+.projects{
+    margin-bottom:2%;
+}
+.project-header:hover{
+    color:grey;
+}
+.project-list-objects{
+    font-size:12px;
+}
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+  background-color: #4ac653;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;  
+}
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sub-head{
+    color:grey;
+    font-weight: lighter;
+    font-size: 22px;
+    font-family: "Rubik";
+    text-transform: uppercase;
+}
+/*footer*/
+.footer{
+    background-color:#00274c;
+    height:50px;
+    width:100%;
+    padding-top:1%;
+    padding-bottom:1%;
+    font-family: "Rubik";
+}
+a{
+    text-decoration:none; 
+}
+.footer-right-text{
+    font-size:12px;
+}
+.footer-right-text a{
+    color:#576a89;
+    text-decoration:none;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .first-division-mobile{
+        display:none;
+    }
+    .second-division-mobile{
+        width:100%;
+    }
+    .jobs-body{
+        padding-right:5%;
+        padding-left:5%;
+    }
+}
+/*Desktop*/
+@media only screen and (min-width:769px){
+    .container{
+        margin:auto;
+    }
+    body{
+        width:100%;
+    }
+    .jobs-body{
+        padding-right:20%;
+        padding-left:20%;
+    }
+}
